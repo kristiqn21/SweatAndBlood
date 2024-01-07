@@ -1,10 +1,31 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
 
-const BodyPart = () => {
+import Icon from '../assets/assets/icons/bodybuilder_cropped (1).png'
+const BodyPart = ({item, setBodyPart, bodyPart}) => {
   return (
-    <Stack>
+    <Stack 
+      type='button'
+      alignItems='center'
+      justifyContent='centre'
+      className='bodyPart-card'
+      sx={{
+        borderTop: bodyPart === item ? '4px solid #6B7280' : '',
+          borderBottomLeftRadius: '20px',
+          width: '300px',
+          height: '290px',
+          cursor: 'pointer',
+          gap: '40px',
 
+        }}
+        onClick= {() => {
+          setBodyPart(item);
+          window.screenTop({top: 1800, left: 100, behavior: 'smooth'})
+        }}
+    >
+      <img src={Icon} alt="dumbbell" style={{width: '100px', height: '100px'}}/>
+
+      <Typography fontSize="24px" fontWeight='bold' color='#6B7280' textTransform='capitalize'>{item}</Typography>
     </Stack>
   )
 }
