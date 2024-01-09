@@ -1,37 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { Box, Stack, TextField, Button, Typography } from "@mui/material";
 import { exercisesOptions, fetchData } from "../utils/fetchData";
-import { HorizontalRule } from "@mui/icons-material";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 
-const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
-  const [search, setSearch] = useState('')
-
-  const [bodyParts, setBodyParts] = useState([])
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
+  const [search, setSearch] = useState('');
+  const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
-    const fetchExercisesData = async() => {
-      const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exercisesOptions)
+    const fetchExercisesData = async () => {
+      const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exercisesOptions);
 
       setBodyParts(['all', ...bodyPartsData]);
-    }
-    fetchExercisesData();
-  }, [])
+    };
 
-  const handleSearch = async() => {
-    if(search) {
-      const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exercisesOptions);
-      
-      const searchedExercises = exerciseData.filter(
-        (exercise) => exercise.name.toLowerCase().includes(search)
-        || exercise.target.toLowerCase().includes(search)
-        || exercise.equipment.toLowerCase().includes(search)
-        || exercise.bodyPart.toLowerCase().includes(search)
+    fetchExercisesData();
+  }, []);
+
+  const handleSearch = async () => {
+    if (search) {
+      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exercisesOptions);
+
+      const searchedExercises = exercisesData.filter(
+        (item) => item.name.toLowerCase().includes(search)
+               || item.target.toLowerCase().includes(search)
+               || item.equipment.toLowerCase().includes(search)
+               || item.bodyPart.toLowerCase().includes(search),
       );
 
-      setExercises(searchedExercises)
+      window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
+
+      setSearch('');
+      setExercises(searchedExercises);
     }
-  }
+  };
 
 
   return (
