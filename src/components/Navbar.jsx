@@ -44,6 +44,7 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "#3A1212",
+            borderBottom: "3px solid #6B7280",
           }}
         >
           Exercises
