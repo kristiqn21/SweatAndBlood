@@ -2,6 +2,7 @@ import { Stack, Typography } from '@mui/material'
 import React from 'react'
 
 import Icon from '../assets/assets/icons/bodybuilder_cropped (1).png'
+
 const BodyPart = ({item, setBodyPart, bodyPart}) => {
   return (
     <Stack 
