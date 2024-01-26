@@ -2,15 +2,15 @@
 
 ![React Application](https://github.com/kristiqn21/SweatAndBlood/blob/main/ReadMe.PNG)
 
-### 1. Overview
-Sweat and Blood is a powerful React-based fitness application designed to 
-provide users with a comprehensive platform for discovering, learning, and practicing a wide 
-range of exercises. The app focuses on showcasing exercises, suggesting similar alternatives, and 
-integrating YouTube explanation videos for visual guidance.
+## 1. Overview
+### Sweat and Blood is a powerful React-based fitness application designed to 
+### provide users with a comprehensive platform for discovering, learning, and practicing a wide 
+### range of exercises. The app focuses on showcasing exercises, suggesting similar alternatives, and 
+### integrating YouTube explanation videos for visual guidance.
 
 
-### 2. Features
-## Exercise Categories and Muscle Groups
+## 2. Features
+### Exercise Categories and Muscle Groups
 Users can choose exercise categories based on their fitness goals.
 Ability to filter exercises by specific muscle groups for targeted workouts.
 ### Exercise Browse
