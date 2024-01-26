@@ -1,4 +1,4 @@
-#Gym Application created using React and Rapid Api
+## finalGym Application created using React and Rapid Api
 
 ![React Application](https://github.com/kristiqn21/SweatAndBlood/blob/main/ReadMe.PNG)
 
