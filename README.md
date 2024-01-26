@@ -33,11 +33,6 @@ Suggest alternatives based on muscle groups or difficulty level.
 
 
 
-
-
-
-
-
 #API'S Used
 
 ### [⭐RapidAPI](https://rapidapi.com/hub?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel%2F)
