@@ -10,23 +10,23 @@
 
 
 ## 2. Features
-### Exercise Categories and Muscle Groups
+1.Exercise Categories and Muscle Groups
 Users can choose exercise categories based on their fitness goals.
 Ability to filter exercises by specific muscle groups for targeted workouts.
-### Exercise Browse
+2.Exercise Browse
 ## Browse a comprehensive database of more than one thousand exercises.
 User-friendly interface for seamless navigation.Practical Examples
 Include practical examples and demonstrations for each exercise.
 A detailed description of how to perform each exercise correctly.
-### Pagination
+3.Pagination
 ## Implement pagination for a smooth and organized browsing experience.
 ## Allow users to navigate through exercises efficiently.
-### Exercise Details
+4.Exercise Details
 ## Display detailed information about each exercise, including its benefits, equipment required, and difficulty level.
-### YouTube Integration
+5.YouTube Integration
 ### Pull related exercise videos from YouTube to enhance the user experience.
 Embedded videos for visual guidance on how to perform exercises correctly.
-### Similar Exercises
+6.Similar Exercises
 ## Showcase similar exercises to encourage variety in workouts.
 Suggest alternatives based on muscle groups or difficulty level.
 
